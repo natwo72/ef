@@ -10,7 +10,7 @@
   width:100vw;
   &__header {
     height:660px;   
-    background-image:url(header.jpg);
+    background-image:url(header.jpg);   
     background-size:cover;
     color:#ffffff;
     text-align: center;
@@ -30,38 +30,14 @@
       }
     }
   }
-  &__contents{
-    color:#ffffff;
-    display: flex;
-    &__contents1{
-      background-image:url(emotion_joy.jpg);
-      height:540px;
-      width:480px;
-      padding:30px;
+  &__contents {   
+    &__emotion {
+      display: flex;
     }
-    &__contents2{
-      background-image:url(emotion_anger.jpg);
-      height:540px;
-      width:480px;
-      padding:30px;
-    }
-    &__contents3{
-      background-image:url(emotion_sadness.jpg);
-      height:540px;
-      width:480px;
-      padding:30px;
-    }
-    h2 {
-      font-size: 60px;
-      padding-top:20px;
-    }
-    p {
-      font-size: 24px;
-    }
-  }
+  }   
   &__happy{
     height:570px;
-    background-image:url(emotion_happy.jpg);
+    // background-image:url(emotion_happy.jpg);
     background-size:cover;
     color:#ffffff;
     text-align: center;

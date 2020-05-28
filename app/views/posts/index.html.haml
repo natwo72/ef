@@ -8,20 +8,15 @@
     .main__header__title--2
       "きぶん"で選ぶ今夜のおつまみ
   .main__contents
-    .main__contents__contents1
-      %h2 "喜" JOY
-      %p 憧れのあの人に褒められた日 
-    .main__contents__contents2
-      %p 泣き叫びたい夜も
-      %p ある
-      %h2 "怒" ANGER
-    .main__contents__contents3
-      %h2 "哀" SADNESS
-      %p 今日はとことんセンチメンタルに
-  .main__happy
-    %h1 "楽" HAPPY
-    %p だいすきなあの人とは
-    %p 特別なあのおつまみを
+    .main__contents__emotion
+      .main__contents__emotion__joy 
+        = link_to image_tag("emotion_joy2"),"http://localhost:3000/categories/1"        
+      .main__contents__emotion__anger 
+        = link_to image_tag("emotion_anger2"), "http://localhost:3000/categories/2"
+      .main__contents__emotion__sadness
+        = link_to image_tag("emotion_sadness2"),"http://localhost:3000/categories/3"
+    .main__contents__emotion__happy
+      = link_to image_tag("emotion_happy2"), "http://localhost:3000/categories/4"
   .main__categorylist
     .main__categorylist__box
       - @categories.each do |category|
@@ -29,6 +24,3 @@
   .main__newpost
     .main__newpost__box
       = link_to "Try posting!!", new_post_path
-  
-  
-
