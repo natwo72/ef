@@ -1,4 +1,9 @@
 .main__category
-  .main__category__
-- @posts.each do |post| 
-  =post.title
+  .main__category__name
+    = @category.name
+  .main__category__posts
+    - @posts.each do |post|
+      .main__category__posts__images
+        = image_tag post.image.url, class: '.main__category__posts__images__image' if post.image.present?
+      .main__category__title
+        =post.title

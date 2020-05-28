@@ -115,14 +115,6 @@
       }
     }
   }
-  &__posts {
-    text-align: center;
-    font-size: 30px;
-    padding-top:50px;
-    &__post {
-      padding-bottom:20px;
-    }
-  }
   &__categorylist {
     height:300px;
     line-height: 300px;
@@ -164,6 +156,27 @@
       }
     }
   }
+  &__category {
+    height:200px;
+    background-color:#d09683;
+    &__name {
+      font-family:Georgia;
+      text-align: center;
+      font-size: 100px;
+      line-height: 200px;
+      color:#ffffff;
+    }
+    &__posts {
+      padding-top:100px;
+      padding-bottom:100px;
+      text-align: center;
+      font-size: 30px;
+      &__images{
+      }
+      &__title {        
+      }
+    }
+  } 
 
   
 }
