@@ -1,8 +1,9 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
-    @categories = Category.all  #test
+  @posts = Post.all
+  @categories = Category.all
+
   end
 
   def new
@@ -12,15 +13,8 @@ class PostsController < ApplicationController
 
   def create
     @posts = Post.create(post_params)
-    redirect_to @post
+    redirect_to root_path
   end
-
-  def show
-    @category = Category.find(params[:id]) #test
-  end
-
-
-
 
   private
   def post_params
