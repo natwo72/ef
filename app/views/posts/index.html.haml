@@ -1,0 +1,38 @@
+.wrapper
+.main
+  .main__header
+    .main__header__logo
+      = icon('fas', 'cocktail')
+    .main__header__title--1
+      EMOTIONS FOODS
+    .main__header__title--2
+      "きぶん"で選ぶ今夜のおつまみ
+  .main__contents
+    .main__contents__contents1
+      %h2 "喜" JOY
+      %p 憧れのあの人に褒められた日 
+    .main__contents__contents2
+      %p 泣き叫びたい夜も
+      %p ある
+      %h2 "怒" ANGER
+    .main__contents__contents3
+      %h2 "哀" SADNESS
+      %p 今日はとことんセンチメンタルに
+  .main__happy
+    %h1 "楽" HAPPY
+    %p だいすきなあの人とは
+    %p 特別なあのおつまみを
+  .main__categorylist
+    - @categories.each do |category|
+      = link_to "#{category.name}", post_path(category)
+
+  .main__posts    
+    - @posts.each do |post|
+      .main__posts__post
+        = image_tag post.image.url, class: '.main__posts__post__image' if post.image.present?
+        .main__posts__post__content
+          =post.title
+        -# .main__posts__post__category
+        -#   - @categories.each do |category| 
+        -#     = link_to "#{category.name}", post_path(category) 
+

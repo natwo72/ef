@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display:flex;
+}
+
+.main{
+  width:100vw;
+  &__header {
+    height:660px;   
+    background-image:url(header.jpg);
+    background-size:cover;
+    color:#ffffff;
+    text-align: center;
+    &__logo {
+      font-size:90px;
+      padding-top:50px;    
+    }
+    &__title{ 
+      &--1{
+        font-size:20px;
+        font-family:sans-serif;
+      }
+      &--2{
+        font-size:20px;
+        padding-top:30px;
+        font-family:sans-serif;       
+      }
+    }
+  }
+  &__contents{
+    color:#ffffff;
+    display: flex;
+    &__contents1{
+      background-image:url(emotion_joy.jpg);
+      height:540px;
+      width:480px;
+      padding:30px;
+    }
+    &__contents2{
+      background-image:url(emotion_anger.jpg);
+      height:540px;
+      width:480px;
+      padding:30px;
+    }
+    &__contents3{
+      background-image:url(emotion_sadness.jpg);
+      height:540px;
+      width:480px;
+      padding:30px;
+    }
+    h2 {
+      font-size: 60px;
+      padding-top:20px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  &__happy{
+    height:570px;
+    background-image:url(emotion_happy.jpg);
+    background-size:cover;
+    color:#ffffff;
+    text-align: center;
+  }
+  h1 {
+    padding-top:100px;
+    font-size: 60px;
+  }
+  p {
+    font-size: 30px;
+  }
+  &__form {
+    height:300px;
+    background-color: #ffffff;
+    padding:50px;
+    .title{
+      font-size:30px;
+      color:#678F8D;
+      text-align: center;
+    }
+    .message-form {
+      display: flex;
+      .input-box {
+        position: relative;
+        width: 100%;
+        .text {
+          height:200px;
+          width:100%;
+          padding:0 40px 0 10px;
+        }
+        &__label {
+          font-size: 3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          line-height: 200px;
+          &-file {
+            display:none;
+          }
+        }
+      }
+      .submit-btn {
+        width: 100px;
+        height:200px;
+        padding:0 30px;
+        margin-left:20px;
+        background-color: #678F8D;
+        color:white; 
+        cursor: pointer;
+      }
+    }
+  }
+  &__posts {
+    text-align: center;
+    font-size: 30px;
+    padding-top:50px;
+    &__post {
+      padding-bottom:20px;
+    }
+  }
+}
