@@ -2,7 +2,7 @@
 
 ## Demo
 
-![ef](https://github.com/natwo72/ef/issues/1#issue-647771080)
+https://github.com/natwo72/ef/issues/1#issue-647771080
 
 ## App name
 
