@@ -12,11 +12,11 @@
       .main__contents__emotion__joy 
         = link_to image_tag("emotion_joy2"),category_path(1)      
       .main__contents__emotion__anger 
-        = link_to image_tag("emotion_anger2"), category_path(2)
+        = link_to image_tag("emotion_anger2"),category_path(2)
       .main__contents__emotion__sadness
         = link_to image_tag("emotion_sadness2"),category_path(3) 
     .main__contents__emotion__happy
-      = link_to image_tag("emotion_happy2"), category_path(4) 
+        = link_to image_tag("emotion_happy2"), category_path(4) 
   .main__categorylist
     .main__categorylist__box
       - @categories.each do |category|
