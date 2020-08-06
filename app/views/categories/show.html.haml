@@ -5,5 +5,13 @@
     - @posts.each do |post|
       .main__category__posts__images
         = image_tag post.image.url, class: '.main__category__posts__images__image' if post.image.present?
-      .main__category__title
-        =post.title
+      .main__category__title-box
+        .main__category__title-box__title
+          =post.title
+  .main__categorylist
+    .main__categorylist__box
+      - @categories.each do |category|
+        = link_to "#{category.name}", category_path(category)
+  .main__newpost
+    .main__newpost__box
+      = link_to "TOP PAGE", root_path
