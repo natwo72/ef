@@ -2,7 +2,7 @@
 
 ## Demo
 
-![ef](https://github.com/natwo72/ef/issues/1#issue-647771080)
+https://github.com/natwo72/ef/issues/1#issue-647771080
 
 ## App name
 
@@ -15,17 +15,17 @@
 - $ rails db:create
 - $ rails db:migrate
 - $ rails s
-- :point_right: ttp://localhost:3000
+- :point_right: http://localhost:3000
 
 ### 概要
 
-- その日その時のキブン（喜怒哀楽）で選ぶ今夜のおつまみを選ぶ
-- 今日もお酒をのみたいなあ:point_right:
-- なにかおいしいおつまみと一緒にのみたいけど...:point_right:
-- なにがたべたいか、ぱっと思い浮かばない... :point_right:
-- 検索するとたくさん出てきて困っちゃうし... :point_right:
-- とう言う人に向けた、今日のおつまみを決める一つの手段になるアプリケーション
-- 自分も喜怒哀楽別におつまみを投稿できます。
+ その日その時のキブン（喜怒哀楽）で選ぶ今夜のおつまみを選ぶ
+ 今日もお酒をのみたいなあ:point_right:
+ なにかおいしいおつまみと一緒にのみたいけど...:point_right:
+ なにがたべたいか、ぱっと思い浮かばない... :point_right:
+ 検索するとたくさん出てきて困っちゃうし... :point_right:
+ とう言う人に向けた、今日のおつまみを決める一つの手段になるアプリケーション
+ 自分も喜怒哀楽別におつまみを投稿できます。
 
 ### DB設計
 
