@@ -68,4 +68,4 @@ gem 'sprockets', '3.7.2'
 gem "font-awesome-sass"
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'rails_12factor', group: :production
+gem 'rails_12factor' 
